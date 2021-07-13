@@ -1,6 +1,19 @@
 header {
   background: #2d25a0;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  margin: 25px;
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  margin-right: 15px;
+}
 
 .football-container {
   display: flex;
@@ -9,12 +22,17 @@ header {
 .football-half h1 {
   font-size: 64px;
   color: white;
+  padding-top: 50px;
+  margin-left: 20px;
 }
 
 .football-half img {
   width: 456px;
   height: 338px;
   padding-left: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-right: 20px;
 }
 
 .link-button {
@@ -57,5 +75,18 @@ header {
   top: 50px;
 } */
 .text-color {
-  color: black;
+  color: green;
+  font-size: 50px;
+}
+.footer-container {
+  padding-top: 200px;
+  text-align: center;
+}
+.footer-container img {
+  width: 483px;
+  height: 110px;
+}
+.fab {
+  margin: 15px;
+  font-size: 20px;
 }
