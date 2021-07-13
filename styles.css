@@ -1,0 +1,61 @@
+header {
+  background: #2d25a0;
+}
+
+.football-container {
+  display: flex;
+}
+
+.football-half h1 {
+  font-size: 64px;
+  color: white;
+}
+
+.football-half img {
+  width: 456px;
+  height: 338px;
+  padding-left: 200px;
+}
+
+.link-button {
+  font-size: 20px;
+  text-decoration: none;
+  background-image: linear-gradient(green, yellow);
+  border-radius: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 35px;
+  color: red;
+}
+.football-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.player-box {
+  height: 474px;
+  width: 330px;
+  left: 180px;
+  top: 747px;
+  margin: 15px;
+  box-shadow: 5px 5px 5px white;
+  border-radius: 10px;
+  padding: 15px;
+}
+.player-box img {
+  width: 300px;
+  height: 256px;
+}
+.player-info {
+  height: 154px;
+  width: 300px;
+}
+/* .player-info p {
+  width: 300px;
+  height: 104px;
+  top: 50px;
+} */
+.text-color {
+  color: black;
+}
