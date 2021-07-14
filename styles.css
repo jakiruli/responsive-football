@@ -96,9 +96,52 @@ nav a {
 
 /* second section football club */
 
-.text-color {
-  color: green;
-  font-size: 50px;
+.club-container3{
+
+}
+.section-title{
+  font-size: 56px;
+  text-align: center;
+  padding: 25px;
+  color: #2d25a0;
+}
+.clubs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  padding-left: 15%;
+  
+  
+}
+.club{
+  width: 350px;
+  height: 350px;
+  padding-right: 25px;
+  padding-left: 50px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px black  ;
+ 
+  
+
+ 
+}
+.club img{
+  width: 250px;
+  height: 200px;
+  
+  
+
+}
+.club-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.club-detail p{
+  font-size: 16px;
+  
+
 }
 
 /* football logo design */
