@@ -1,30 +1,19 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-header {
-  background: #2d25a0;
-}
-
-/* nav style */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 35px;
-  margin: 25px;
-  margin-right: 20px;
-}
-nav a {
-  text-decoration: none;
-  color: white;
-  width: 46px;
-  height: 24px;
-  margin-right: 15px;
-}
 
 /* football container style */
 .football-container {
-  display: flex;
+  
+  background-color: blue;
+   width: 100%;
+   height: 600px;
+ 
+}
 
+.football-heading{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
 }
 
 .football-half h1 {
@@ -34,15 +23,26 @@ nav a {
   color: white;
   padding-top: 5px;
   margin-left: 100px;
+  
 }
 
-.football-half img {
+.football-banner img {
   width: 456px;
   height: 338px;
   padding-left: 200px;
   padding-top: 50px;
   padding-bottom: 50px;
   margin-right: 20px;
+  
+  
+            
+}
+.football-banner img:hover{
+  width: 50px;
+  height: 50px;
+  transition: ease-in;
+  transition: width 2s, height 2s, transform 2s;
+  transform:skewY(0.5)                                                             
 }
 
 .link-button {
@@ -58,20 +58,20 @@ nav a {
   color: red;
 }
 
-/* Football Player container Box */
-.football-container2 {
-  display: grid;
+  .players{
+    display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-left: 50px;
   
-}
+ 
+  }
+
 .player-box {
   height: 474px;
   width: 330px;
   left: 180px;
   top: 747px;
   margin: 15px;
-  
+  margin-left: 100px;
   border-radius: 10px;
   padding: 15px;
   box-sizing: border-box;
@@ -110,8 +110,6 @@ nav a {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 24px;
   padding-left: 15%;
-  
-  
 }
 .club{
   width: 350px;
@@ -121,17 +119,11 @@ nav a {
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 1px 2px 4px black  ;
- 
-  
-
- 
+  margin: 10px;
 }
 .club img{
   width: 250px;
   height: 200px;
-  
-  
-
 }
 .club-info{
   display: flex;
@@ -140,8 +132,6 @@ nav a {
 }
 .club-detail p{
   font-size: 16px;
-  
-
 }
 
 /* football logo design */
@@ -157,6 +147,97 @@ nav a {
 .fab {
   margin: 15px;
   font-size: 20px;
-  /* align-items: center; */
   justify-content: center;
 }
+
+
+/* mobile responsive football-container2 */
+
+@media only screen and (max-width: 768px) {
+
+  .football-container ,.football-container2 ,.club-container3 {
+    width: 100%;
+  }
+  .football-heading, .players, .clubs{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .football-container {
+    width: 100%; 
+  }
+
+  .football-half h1 {
+    font-size: 40px;
+    width: 350px;
+    height: 200px;
+    color: white;
+    padding-top: 5px;
+    margin-left: 20px;
+
+  }
+  .football-banner img {
+    
+    padding-top: 30px;
+    padding-bottom: 100px;
+    margin-left: -195px;           
+  }
+  .players{
+  margin-left: -90px;
+  }
+  
+  .clubs{
+    
+     padding-left: 1%;
+  }
+  .footer-container{
+    width: 100% ;
+  }
+  .footer-container img{
+    width: 360px;
+  }
+}
+
+/* Tablet media */
+
+@media only screen and (min-width:600px) and (max-width: 992px)  {
+   
+  
+  .football-container ,.football-container2 ,.club-container3 ,.clubs{
+    width: 100%;
+  }
+  .football-heading, .players, .clubs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .football-banner img {
+    width: 456px;
+    height: 350px;
+    margin-right: 20px;
+    
+    padding-bottom: 100px;          
+  }
+  .football-half h1 {
+    
+    font-size: 40px;
+    
+  }
+  .link-button {
+    font-size: 16px;
+  }
+  .player-box {
+    flex-direction: column;
+  }
+  
+  .player-box{
+    left: 10px;
+  }
+  .clubs{
+    
+    padding-left: 5%;
+ }
+ .footer-container{
+   width: 100% ;
+ }
+ .footer-container img{
+   width: 360px;
+ }
+}
+
