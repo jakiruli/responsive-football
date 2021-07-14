@@ -1,3 +1,6 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
 header {
   background: #2d25a0;
 }
@@ -11,19 +14,23 @@ nav {
 nav a {
   text-decoration: none;
   color: white;
-  font-size: 1.3em;
+  width: 46px;
+  height: 24px;
   margin-right: 15px;
 }
 
 .football-container {
   display: flex;
+
 }
 
 .football-half h1 {
   font-size: 64px;
+  width: 485px;
+  height: 230px;
   color: white;
-  padding-top: 50px;
-  margin-left: 20px;
+  padding-top: 5px;
+  margin-left: 100px;
 }
 
 .football-half img {
@@ -36,7 +43,7 @@ nav a {
 }
 
 .link-button {
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none;
   background-image: linear-gradient(green, yellow);
   border-radius: 20px;
@@ -44,12 +51,14 @@ nav a {
   padding-right: 35px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 35px;
+  margin-left: 100px;
   color: red;
 }
 .football-container2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-left: 50px;
+  
 }
 .player-box {
   height: 474px;
@@ -57,10 +66,11 @@ nav a {
   left: 180px;
   top: 747px;
   margin: 15px;
-  box-shadow: 5px 5px 5px white;
+  
   border-radius: 10px;
   padding: 15px;
-  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px black  ;
 }
 .player-box img {
   width: 300px;
@@ -70,19 +80,32 @@ nav a {
   height: 154px;
   width: 300px;
 }
+.player-info h3 {
+  font-size: 28px;
+  text-align: left;
+}
+.player-info p{
+  Font size: 16px;
+  text-align: left;
+}
 
 .text-color {
   color: green;
   font-size: 50px;
 }
 .footer-container {
-  padding-top: 200px;
+  padding-top: 100px;
   text-align: center;
+  
 }
 .footer-container img {
   height: 110px;
+ 
+  
 }
 .fab {
   margin: 15px;
   font-size: 20px;
+  /* align-items: center; */
+  justify-content: center;
 }
