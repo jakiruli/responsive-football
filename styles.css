@@ -4,6 +4,8 @@ body {
 header {
   background: #2d25a0;
 }
+
+/* nav style */
 nav {
   display: flex;
   justify-content: space-between;
@@ -19,6 +21,7 @@ nav a {
   margin-right: 15px;
 }
 
+/* football container style */
 .football-container {
   display: flex;
 
@@ -54,6 +57,8 @@ nav a {
   margin-left: 100px;
   color: red;
 }
+
+/* Football Player container Box */
 .football-container2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -89,20 +94,23 @@ nav a {
   text-align: left;
 }
 
+/* second section football club */
+
 .text-color {
   color: green;
   font-size: 50px;
 }
+
+/* football logo design */
 .footer-container {
   padding-top: 100px;
   text-align: center;
-  
 }
 .footer-container img {
   height: 110px;
- 
-  
 }
+
+/* footer icon style */
 .fab {
   margin: 15px;
   font-size: 20px;
